@@ -24,3 +24,10 @@ sudo apt-get -y install bison
 sudo apt-get -y install subversion
 sudo apt-get -y install python-software-properties
 sudo apt-get -y install ack-grep
+
+# Git
+sudo apt-get -y install git
+sudo apt-get -y install git-svn
+sudo apt-get -y install gitk
+sudo apt-get -y install ssh
+sudo apt-get -y install libssh-dev
