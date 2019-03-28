@@ -25,6 +25,11 @@ sudo apt-get -y install subversion
 sudo apt-get -y install python-software-properties
 sudo apt-get -y install ack-grep
 
+# Terminal
+sudo apt-get -y install zsh
+sudo apt-get -y install tmux
+sudo chsh $USER -s $(which zsh)
+
 # Git
 sudo apt-get -y install git
 sudo apt-get -y install git-svn
