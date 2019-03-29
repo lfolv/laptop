@@ -37,3 +37,6 @@ sudo apt-get -y install git-svn
 sudo apt-get -y install gitk
 sudo apt-get -y install ssh
 sudo apt-get -y install libssh-dev
+
+#Node.js
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
