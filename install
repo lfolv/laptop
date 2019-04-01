@@ -25,6 +25,13 @@ sudo apt-get -y install subversion
 sudo apt-get -y install python-software-properties
 sudo apt-get -y install ack-grep
 sudo apt-get -y install libpq-dev
+sudo apt-get -y install libhiredis-dev
+sudo apt-get -y install libmemcached-dev
+sudo apt-get -y install imagemagick
+sudo apt-get -y install libmagickwand-dev
+sudo apt-get -y install install libssh-dev
+sudo apt-get -y install libqt4-dev
+sudo apt-get -y install libqtwebkit-dev
 
 # Terminal
 sudo apt-get -y install zsh
@@ -36,7 +43,6 @@ sudo apt-get -y install git
 sudo apt-get -y install git-svn
 sudo apt-get -y install gitk
 sudo apt-get -y install ssh
-sudo apt-get -y install libssh-dev
 
 #Node.js
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
