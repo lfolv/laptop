@@ -53,3 +53,6 @@ curl -sSL https://get.rvm.io | bash -s stable --ruby --rails
 
 # Postgresql
 sudo apt-get -y install postgresql postgresql-contrib
+
+# Redis
+sudo apt-get -y install redis-server
