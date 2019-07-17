@@ -5,7 +5,6 @@ sudo apt-get -y install openssl
 sudo apt-get -y install libreadline6
 sudo apt-get -y install libreadline6-dev
 sudo apt-get -y install curl
-sudo apt-get -y install git-core
 sudo apt-get -y install zlib1g
 sudo apt-get -y install zlib1g-dev
 sudo apt-get -y install libssl-dev
@@ -27,15 +26,12 @@ sudo apt-get -y install ack-grep
 sudo apt-get -y install libpq-dev
 sudo apt-get -y install libhiredis-dev
 sudo apt-get -y install libmemcached-dev
+sudp apt-get -y install imagemagick
 sudo apt-get -y install libmagickwand-dev
 sudo apt-get -y install install libssh-dev
 sudo apt-get -y install libqt4-dev
 sudo apt-get -y install libqtwebkit-dev
-
-sudo apt-get -y install zsh
 sudo apt-get -y install tmux
-sudo chsh $USER -s $(which zsh)
-
 sudo apt-get -y install git
 sudo apt-get -y install git-svn
 sudo apt-get -y install gitk
