@@ -35,6 +35,7 @@ sudo apt-get -y install libmagickwand-dev
 sudo apt-get -y install install libssh-dev
 sudo apt-get -y install libqt4-dev
 sudo apt-get -y install libqtwebkit-dev
+sudo apt-get -y install default-jdk
 sudo apt-get -y install zsh
 sudo apt-get -y install tmux
 
