@@ -23,7 +23,7 @@ echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
 echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 
 sudo apt-get -y install postgresql postgresql-contrib libpq-dev
-sudo apt-get -y install libhiredis-dev
+sudo apt-get -y install redis-server libhiredis-dev
 sudo apt-get -y install libmemcached-dev
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
