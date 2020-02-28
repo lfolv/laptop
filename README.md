@@ -18,7 +18,9 @@ Execute the command:
 wget -O - https://raw.githubusercontent.com/lfolv/laptop/master/install | bash
 ```
 
-## Postgres
+## After Install
+
+### Run Postgres
 
 ```sh
 docker pull postgres
