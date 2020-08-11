@@ -20,6 +20,33 @@ wget -O - https://raw.githubusercontent.com/lfolv/laptop/master/install | bash
 
 ## After Install
 
+### Install NodeJS
+```sh
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+asdf install nodejs <version>
+asdf global nodejs <version>
+```
+
+### Install Ruby
+```sh
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf install ruby <version>
+asdf global ruby <version>
+```
+
+### Install Python
+```sh
+asdf plugin-add python
+asdf install python <version>
+asdf global python <version>
+```
+
+### Install YADR
+```sh
+sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
+```
+
 ### Run Postgres
 
 ```sh
