@@ -40,6 +40,8 @@ echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 docker pull postgres
 mkdir -p $HOME/docker/volumes/postgres
 docker run --rm --name postgres -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres
+sudo groupadd docker
+sudo gpasswd -a $USER docker
 
 sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.3/ctop-0.7.3-linux-amd64 -O /usr/local/bin/ctop
 sudo chmod +x /usr/local/bin/ctop
