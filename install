@@ -1,49 +1,38 @@
 #!/usr/bin/env bash
 
-main()
-{
-  upgrade_system()
-
-  install build-essential
-  install libssl-dev
-  install libreadline-dev
-  install libffi-dev
-  install default-jdk
-  install apt-transport-https
-  install ca-certificates
-  install software-properties-common
-  install python-software-properties
-  install imagemagick
-  install libmagickwand-dev
-  install curl
-  install git
-  install ssh
-  install zsh
-  install tmux
-  install vim
-  install ack-grep
-  install sqlite3
-  install libsqlite3-dev
-  install libpq-dev
-  install libhiredis-dev
-  install libmemcached-dev
-  install docker.io
-
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.3
-  echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
-  echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
-}
-
-upgrade_system()
-{
-  sudo apt update
-  sudo apt upgrade -y
-}
-
 install()
 {
-
   sudo apt install -y $1
 }
 
-main()
+sudo apt update
+sudo apt upgrade -y
+
+install build-essential
+install libssl-dev
+install libreadline-dev
+install libffi-dev
+install default-jdk
+install apt-transport-https
+install ca-certificates
+install software-properties-common
+install python-software-properties
+install imagemagick
+install libmagickwand-dev
+install curl
+install git
+install ssh
+install zsh
+install tmux
+install vim
+install ack-grep
+install sqlite3
+install libsqlite3-dev
+install libpq-dev
+install libhiredis-dev
+install libmemcached-dev
+install docker.io
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.3
+echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
+echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
