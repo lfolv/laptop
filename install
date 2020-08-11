@@ -10,7 +10,7 @@ sudo apt-get -y install libffi-dev
 sudo apt-get -y install default-jdk
 sudo apt-get -y install software-properties-common
 sudo apt-get -y install python-software-properties
-sudp apt-get -y install imagemagick
+sudo apt-get -y install imagemagick
 sudo apt-get -y install libmagickwand-dev
 sudo apt-get -y install curl
 sudo apt-get -y install git
@@ -30,7 +30,7 @@ echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
 echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" 
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt-get update
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 sudo usermod -aG docker $USER
