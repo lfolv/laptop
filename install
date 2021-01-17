@@ -31,6 +31,7 @@ install libsqlite3-dev
 install postgresql
 install postgresql-contrib
 install libpq-dev
+install redis-server
 install libhiredis-dev
 install libmemcached-dev
 install docker.io
