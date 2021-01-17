@@ -28,6 +28,8 @@ install vim
 install ack-grep
 install sqlite3
 install libsqlite3-dev
+install postgresql
+install postgresql-contrib
 install libpq-dev
 install libhiredis-dev
 install libmemcached-dev
