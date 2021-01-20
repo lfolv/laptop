@@ -5,6 +5,9 @@ install()
   sudo apt install -y $1
 }
 
+wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+
 sudo apt update
 sudo apt upgrade -y
 
@@ -35,6 +38,7 @@ install redis-server
 install libhiredis-dev
 install memcached
 install libmemcached-dev
+install mongodb-org
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.3
 echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
@@ -49,6 +53,6 @@ bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-ke
 ~/.asdf/bin/asdf install nodejs 14.15.4
 ~/.asdf/bin/asdf global nodejs 14.15.4
 
-~/.asdf/bin/asdf plugin-add python
+~/.asdf/bin/asdf plugin-add pythonj
 ~/.asdf/bin/asdf install python 3.9.1
 ~/.asdf/bin/asdf global python 3.9.1
